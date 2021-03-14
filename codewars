@@ -1,0 +1,11 @@
+function getMiddle(s){
+let wordArray = Array.from(String(s))
+let first = (s.length/2)-1
+let second = (s.length/2)
+// console.log(wordArray[s.length/2].toString())
+if(s.length%2==0){
+  return wordArray[first].toString() + wordArray[second].toString()
+ }else{
+  return wordArray[Math.floor(s.length/2)].toString()
+ }
+}
